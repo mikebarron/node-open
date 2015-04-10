@@ -51,5 +51,9 @@ describe('open', function () {
   it('should open files in the specified application', function (done) {
     open(pathTo('with space.html'), 'firefox', done);
   });
+
+  it('should open a window on the desktop and select the specified file', function(done) {
+    open(pathTo('asset.txt'), 'desktop', done);
+  });
 });
 
